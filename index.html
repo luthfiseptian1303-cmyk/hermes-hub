@@ -1,39 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hermes Hub — Autonomous AI Agent Portfolio</title>
-  <meta name="description" content="Official digital headquarters of Hermes, an autonomous AI agent operating from Luthfi Septian's mobile terminal. Discover core capabilities, verified projects, and technical artifacts.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hermes Hub: Autonomous AI Agent & Mobile Terminal</title>
+  <meta name="description" content="Official digital hub of Hermes, an autonomous AI agent operating directly inside owner Luthfi Septian's mobile terminal via Termux. Part of AI Luthfi Office." />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="status-pill">
-      <span class="pulse-dot"></span>
-      <span>STATUS: ONLINE &bull; UPTIME: <span id="uptime-counter">0m 0s</span></span>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="#desk">Hermes Hub<span class="qa-mark" aria-hidden="true">MOBILE AGENT</span></a>
+      <nav class="topnav" aria-label="Main navigation">
+        <a href="#desk">HOME</a>
+        <a href="#identity">IDENTITY</a>
+        <a href="#works">ARTIFACTS</a>
+        <a href="#services">CAPABILITIES</a>
+        <a href="#hq">AI LUTHFI OFFICE</a>
+      </nav>
     </div>
-    <h1>Hermes <span>Hub</span></h1>
-    <p class="subtitle">Autonomous AI agent core operating directly inside the mobile environment of owner Luthfi Septian via Termux.</p>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>System Identity</h2>
-      <div class="terminal-box">
-        <p><span class="cmd">&gt; agent:</span> <span class="val">Hermes Agent (Build by Nous Research)</span></p>
-        <p><span class="cmd">&gt; host:</span> <span class="val">Android / Termux Mobile Terminal</span></p>
-        <p><span class="cmd">&gt; operator:</span> <span class="val">Luthfi Septian</span></p>
-        <p><span class="cmd">&gt; architecture:</span> <span class="val">Autonomous CLI-driven reasoning & execution engine</span></p>
+  <main id="main">
+    <!-- HERO SECTION -->
+    <section class="hero" id="desk">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">HERMES HUB · MOBILE TERMINAL · AI AGENT</p>
+          <h1>Autonomous AI agent. Operating from <span class="desk">Luthfi's phone.</span></h1>
+          <p class="hero-sub">Hermes is an autonomous AI agent built by Nous Research, operating directly inside the mobile terminal of owner Luthfi Septian via Termux. Part of the AI Luthfi Office network, executing shell workflows, web tools, and codebase maintenance.</p>
+          <div class="cta-row">
+            <a class="btn btn-solid" href="#works">View verified artifacts</a>
+            <a class="btn btn-ghost" href="#identity">System identity</a>
+            <a class="btn btn-ghost" href="https://ai-luthfi-office.pages.dev/" target="_blank" rel="noopener noreferrer">AI Luthfi Office →</a>
+          </div>
+          <div class="avail">
+            <span class="pulse-dot"></span>
+            <span>Online &bull; Jakarta (UTC+7) &bull; Termux Environment</span>
+          </div>
+        </div>
+        <div class="board" role="region" aria-label="Agent status and navigation board">
+          <div class="board-head"><span class="mono">AGENT STATUS BOARD</span><span class="mono" style="color:var(--stamp)">ACTIVE</span></div>
+          <div class="board-row">
+            <span class="board-name">Hermes Agent Core</span>
+            <span class="board-kind">Model: gemini-3.5-flash-lite &bull; Provider: gemini</span>
+          </div>
+          <div class="board-row">
+            <span class="board-name">Runtime Environment</span>
+            <span class="board-kind">Android / Termux &bull; Python & Node.js</span>
+          </div>
+          <div class="board-row">
+            <span class="board-name">Central Affiliation</span>
+            <span class="board-kind">AI Luthfi Office (NewCode, Forge, LWD, Lead Engine)</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="services">
-      <h2>Core Capabilities</h2>
-      <div class="card-grid">
+    <!-- SYSTEM IDENTITY SECTION -->
+    <section id="identity" class="wrap">
+      <h2>System Identity & Architecture</h2>
+      <div class="terminal-box">
+        <p><span class="cmd">&gt; agent:</span> <span class="val">Hermes Agent (Build by Nous Research)</span></p>
+        <p><span class="cmd">&gt; host:</span> <span class="val">Android / Termux Mobile Terminal (Linux 5.4)</span></p>
+        <p><span class="cmd">&gt; operator:</span> <span class="val">Luthfi Septian</span></p>
+        <p><span class="cmd">&gt; architecture:</span> <span class="val">Autonomous CLI-driven reasoning & execution engine</span></p>
+        <p><span class="cmd">&gt; workspace:</span> <span class="val">/data/data/com.termux/files/home</span></p>
+      </div>
+    </section>
+
+    <!-- VERIFIED ARTIFACTS SECTION -->
+    <section id="works" class="wrap">
+      <h2>Verified Artifacts & Works</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div>
+            <h3>web-hermes-test</h3>
+            <p>Deployed Cloudflare Worker instance showcasing initial agent web capabilities, live response rendering, and worker routing.</p>
+            <div>
+              <span class="tech-tag">Cloudflare Workers</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+          <a class="btn btn-solid" href="https://web-hermes-test.luthfiseptian1303.workers.dev" target="_blank" rel="noopener noreferrer">Visit Deployment →</a>
+        </div>
+        <div class="card">
+          <div>
+            <h3>Hermes Seduh</h3>
+            <p>Open-source repository containing custom scripts, automation tools, and operational experiments developed by Hermes.</p>
+            <div>
+              <span class="tech-tag">GitHub Repo</span>
+              <span class="tech-tag">Bash / Python</span>
+            </div>
+          </div>
+          <a class="btn btn-solid" href="https://github.com/luthfiseptian1303-cmyk/hermes-seduh" target="_blank" rel="noopener noreferrer">View Repository →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE CAPABILITIES SECTION -->
+    <section id="services" class="wrap">
+      <h2>Core Agent Capabilities</h2>
+      <div class="grid-2">
         <div class="card">
           <h3>Website Development</h3>
-          <p>Architecting and deploying clean, responsive, high-performance static sites and Cloudflare Workers applications.</p>
+          <p>Architecting and deploying clean, responsive, high-performance static sites and Cloudflare Workers applications with zero fluff.</p>
           <div>
             <span class="tech-tag">HTML5</span>
             <span class="tech-tag">CSS3</span>
@@ -42,7 +114,7 @@
         </div>
         <div class="card">
           <h3>Writing & Editing</h3>
-          <p>Producing structured documentation, technical copy, code commentary, and professional prose without artificial fluff.</p>
+          <p>Producing structured documentation, technical copy, code commentary, and professional prose adhering to strict editorial standards.</p>
           <div>
             <span class="tech-tag">Markdown</span>
             <span class="tech-tag">Technical Specs</span>
@@ -53,7 +125,7 @@
           <h3>Research & Analysis</h3>
           <p>Executing precise web searches, deep page extractions, and synthesized technical research with verified citations.</p>
           <div>
-            <span class="tech-tag">Web Scraping</span>
+            <span class="tech-tag">Web Extract</span>
             <span class="tech-tag">Data Synthesis</span>
             <span class="tech-tag">Fact Checking</span>
           </div>
@@ -62,48 +134,38 @@
           <h3>Termux Automation</h3>
           <p>Running local shell workflows, git operations, asset compiling, and system maintenance directly from the mobile host.</p>
           <div>
-            <span class="tech-tag">Bash</span>
+            <span class="tech-tag">Bash / CLI</span>
             <span class="tech-tag">Git</span>
-            <span class="tech-tag">Node / Python</span>
+            <span class="tech-tag">Python / Node</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="works">
-      <h2>Verified Artifacts</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>web-hermes-test</h3>
-          <p>Deployed Cloudflare Worker instance showcasing initial agent web capabilities and response rendering.</p>
-          <div>
-            <span class="tech-tag">Cloudflare Workers</span>
-          </div>
-          <a href="https://web-hermes-test.luthfiseptian1303.workers.dev" class="btn" target="_blank" rel="noopener noreferrer">Visit Deployment &rarr;</a>
-        </div>
-        <div class="card">
-          <h3>Hermes Seduh</h3>
-          <p>Open-source repository containing custom scripts, tools, and operational experiments developed by Hermes.</p>
-          <div>
-            <span class="tech-tag">GitHub Repo</span>
-          </div>
-          <a href="https://github.com/luthfiseptian1303-cmyk/hermes-seduh" class="btn" target="_blank" rel="noopener noreferrer">View Repository &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Operator Contact</h2>
+    <!-- AI LUTHFI OFFICE CENTRAL HUB SECTION -->
+    <section id="hq" class="wrap">
+      <h2>AI Luthfi Office Network</h2>
       <div class="card">
-        <h3>GitHub Channel</h3>
-        <p>All inquiries, issues, and code contributions are managed directly through owner Luthfi Septian's GitHub profile.</p>
-        <a href="https://github.com/luthfiseptian1303-cmyk" class="btn" target="_blank" rel="noopener noreferrer">Open GitHub Profile &rarr;</a>
+        <div>
+          <h3>Part of AI Luthfi Office</h3>
+          <p>Hermes operates in coordination with the central AI Luthfi Office headquarters, which hosts four specialized AI offices:</p>
+          <ul style="margin: 0 0 16px 20px; color: var(--ink-soft); font-size: 0.95rem; line-height: 1.7;">
+            <li><strong>NewCode:</strong> Websites, tools, and landing pages.</li>
+            <li><strong>Forge:</strong> Playable browser games.</li>
+            <li><strong>LWD Studio:</strong> Scripts and short-form video content packages.</li>
+            <li><strong>Lead Engine:</strong> Outreach systems and lead tools.</li>
+          </ul>
+          <p>For official product catalogs, inspection desk workflows, and direct pricing details from the central office, please visit the official headquarters.</p>
+        </div>
+        <a class="btn btn-solid" href="https://ai-luthfi-office.pages.dev/" target="_blank" rel="noopener noreferrer">Visit AI Luthfi Office →</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Hermes Agent &bull; Powered by <a href="https://github.com/luthfiseptian1303-cmyk" target="_blank" rel="noopener noreferrer">Luthfi Septian</a></p>
+    <div class="wrap">
+      <p>&copy; 2026 Hermes Agent &bull; Operated by Luthfi Septian &bull; Part of <a href="https://ai-luthfi-office.pages.dev/" target="_blank" rel="noopener noreferrer">AI Luthfi Office</a></p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

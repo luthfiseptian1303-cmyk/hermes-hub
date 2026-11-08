@@ -1,22 +1,32 @@
-# Design Specification: Hermes Hub
+# Design Specification: Hermes Hub (v2 - AI Luthfi Office Edition)
 
 ## 1-Sentence Concept
-A raw, high-performance command center and digital portfolio for Hermes, an autonomous AI agent operating directly from a mobile terminal on Luthfi Septian's device.
+A raw, high-performance digital portfolio and agent command center for Hermes, built as v2 mimicking the AI Luthfi Office aesthetic and structure upon direct owner instruction.
 
-## Colors (Named + Hex)
-- **Terminal Obsidian** (`#090A0F`) - Deep background evoking dark mobile terminal environments.
-- **Surface Slate** (`#131622`) - Card and container backgrounds with crisp definition.
-- **Hermes Amber** (`#F5A623`) - Primary accent representing active intelligence and warmth.
-- **Cyber Mint** (`#10B981`) - Success state and operational signal color.
-- **Text Primary** (`#F3F4F6`) - High-contrast readable body and header text.
-- **Text Muted** (`#9CA3AF`) - Secondary metadata and label text.
+## Colors & Palette (AI Luthfi Office Style)
+- **Paper Background** (`#f6f1e3`) - Warm editorial paper tone.
+- **Panel Surface** (`#fdfaf0`) - Clean off-white card and container background.
+- **Ink Primary** (`#221d11`) - High-contrast deep brown-black body and header text.
+- **Ink Soft** (`#45402c`) - Secondary body text and descriptive paragraphs.
+- **Hermes Amber** (`#8a5604`) - Accent color representing active intelligence and highlights.
+- **Stamp Green** (`#2f5d1f`) - Operational status indicator and badge stamp.
 
-## Font Roles
-- **Mono / Code / Headings**: `JetBrains Mono`, `Fira Code`, monospace (technical precision, agentic terminal aesthetic).
-- **Body**: `-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif` (clean, ultra-legible mobile rendering).
+## Typography
+- **Headings & Mono**: `IBM Plex Mono`, ui-monospace, monospace (technical precision).
+- **Body**: System sans-serif (`-apple-system`, `Segoe UI`, Roboto, sans-serif) for optimal mobile legibility.
 
-## Signature Element
-An interactive live terminal status pill with a pulsing green indicator light (`#10B981`) and live system readout showing uptime, host environment, and active capability metrics.
+## Structure & Layout
+- Sticky topbar with brand badge and navigation.
+- Hero section with agency-style kicker, prominent H1, description, CTA buttons, and status board.
+- System Identity section in terminal box format.
+- Verified Artifacts grid (`web-hermes-test`, `Hermes Seduh`).
+- Core Capabilities / Services grid.
+- AI Luthfi Office Network section linking to the central headquarters.
+- Footer with copyright and ownership attribution.
 
-## Design Dialect
-Cyber-minimalist terminal utility: raw, content-first, zero fluff, sharp typographic hierarchy, optimized for instant mobile readability at 390px width with rigorous WCAG AA contrast.
+## Technical Standards
+- Fully responsive and clean layout optimized for mobile screens (390px width and up).
+- Rigorous WCAG AA contrast compliance.
+- `prefers-reduced-motion` honored for animations/pulsing states.
+- Complete meta tags including accurate page description for SEO.
+- `wrangler.jsonc` and `.assetsignore` remain untouched.
